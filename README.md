@@ -5,6 +5,8 @@ for this particular, and rather unique, parameter name across all public repos o
 and then create an issue on the repo with the code that uses this parameter to let the author
 know about this.
 
+Relevant paper: [Misunderstood parameter of NCBI BLAST impacts the correctness of bioinformatics workflows](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/bty833/5106166?redirectedFrom=fulltext)
+
 ## Search code
 ```python
 from github import Github
@@ -14,6 +16,8 @@ hits = g.search_code('-max_target_seqs')
 ```
 
 ## Collect hits
+Here is a list of hits that were used for the first batch: [hits_list.csv](hits_list.csv).
+
 ```python
 
 from time import sleep
