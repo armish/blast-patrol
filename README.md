@@ -41,6 +41,7 @@ for hit in hits:
 ```python
 # Turn them into a daraframe for better handling
 hits_pd = pd.DataFrame.from_dict(hits_list)
+hits_by_repo = hits_pd.groupby('repo')
 
 issue_bdy = ("Hi there,\n"
              "\n"
